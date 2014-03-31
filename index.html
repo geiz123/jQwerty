@@ -1,18 +1,26 @@
-<!--fluent interface.
-self-referentiality
--->
 <!DOCTYPE html>
 <html>
-<head>
-<title>Insert title here</title>
-<script type="text/javascript" src="js/jQwerty.js"></script>
-</head>
-<body>
-	<div class="wrapper">
-		<h1>This is a headline</h1>
-	</div>
-	<div class="wrapper">
-		<h1>This is a headline 2</h1>
-	</div>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Insert title here</title>
+        <script type="text/javascript" src="jQwerty.js"></script>
+    </head>
+    <body>
+        <!--fluent interface.
+    self-referentiality
+        closure http://stackoverflow.com/questions/891989/javascript-adding-an-onclick-handler-without-overwriting-the-existing-one
+        -->
+        <div class="wrapper">
+            <h1>This is a headline</h1>
+        </div>
+        <div class="wrapper">
+            <h1>This is a headline 2</h1>
+        </div>
+        
+        <a href="#" id="holly">Click Me</a>
+        
+        <script type="text/javascript">
+            document.getElementById('holly').href = "http://www.google.com";
+        </script>
+    </body>
 </html>
