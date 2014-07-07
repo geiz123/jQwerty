@@ -1,0 +1,16 @@
+$.ajax({
+    type:'POST',
+    url: query_url,
+    data:{query: $("#keyword").val()},
+    dataType:'json',
+    async: false,
+    success:function(d){
+        // Your code.
+    },
+    beforeSend: function(){
+        // Code to display spinner
+    },
+    complete: function(){
+        // Code to hide spinner.
+    }
+});
